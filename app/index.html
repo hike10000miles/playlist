@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>playlist</title>
+
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/normalize-css/normalize.css">
+    
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    
+  </head>
+
+  <body>
+
+    <div class="player">
+        <h1>Tunes</h1>
+
+        <ol id="playlist">
+            
+            
+        </ol>
+        <button id="play">Play</button>
+        <button id="next">Next</button>
+        <button id="stop">Stop</button>
+
+    </div>
+
+    <div>
+      <form id="newSong">
+        <p>
+        <label for="songName">Name of the song</label>
+        <input id="songName" name="songName" type="text">
+        </p>
+        <p>
+        <label for="artist">Name of the artist</label>
+        <input id="artist" name="artist" type="text">
+        </p>
+        <p>
+        <label for="duration">Duration</label>
+        <input id="duration" name="duration" type="text">
+        </p>
+        <button id="addSong">Add Song</button>
+      </form>
+    </div>
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
